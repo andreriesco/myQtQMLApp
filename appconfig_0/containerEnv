@@ -31,6 +31,6 @@ CC=arm-linux-gnueabihf-gcc
 CROSS_COMPILE=arm-linux-gnueabihf-
 DEBIAN_FRONTEND=noninteractive
 TERM_PROGRAM=vscode
-VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-33d8e6c5-2a91-45ab-992f-4f95e4caed41.sock
+VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-788d0523-5ac2-4a31-8b37-b7a7312b9a55.sock
 _=/usr/bin/env
 QMAKE_DESTIDIR=/workspaces/myQtQMLApp/appconfig_0/work/myQtQMLApp
