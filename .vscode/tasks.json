@@ -90,6 +90,8 @@
         }
     ],
     "options": {
-        "env": {}
+        "env": {
+            "TORIZON_PROP_ARG": "ARG SSHUSERNAME=#%application.username%#\n"
+        }
     }
 }
