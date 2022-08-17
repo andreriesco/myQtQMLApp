@@ -1,0 +1,133 @@
+devices:
+    common: []
+    debug: []
+    release: []
+dockercomposefile:
+    common: ''
+    debug: ''
+    release: ''
+extraparms:
+    common: {}
+    debug: {}
+    release: {}
+id: 8c0b123d-111a-454d-9c78-9813bae8f0ad
+images:
+    debug: ''
+    release: ''
+imagetags:
+    debug: myqtqmlapp_arm32v7-qt5-wayland-no-ssh_bullseye_debug_8c0b123d-111a-454d-9c78-9813bae8f0ad
+    release: myqtqmlapp_arm32v7-qt5-wayland-no-ssh_bullseye_release_8c0b123d-111a-454d-9c78-9813bae8f0ad
+modificationdate: '2022-08-17T13:36:34.699067'
+networks:
+    common: []
+    debug: []
+    release: []
+otapackagename: ''
+otapackageversion: 1.0.0
+platformid: arm32v7-qt5-wayland-no-ssh_bullseye
+ports:
+    common: {}
+    debug: {}
+    release: {}
+privatekey: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEowIBAAKCAQEAvaEuy2ixEHjLWoRWKGi8N8ErZqLkU3kE6awqFwKuUXvU7/Kj
+
+    3gf32m3bDRa3JIdm7xViVd9mGlO5VR6ue9mGoQJGKWhpQ1LSXbWpWHsOji5iDHzn
+
+    /1+DNeM4MFWsxfepUDoHECtFJukY6nzmq36+NaUgtWtvkdUp2sN006g97ROAMdlG
+
+    btcUX3ULeaUS4xqGlU1btzOD60eyZ9GL32uvg6mkrNxvGC9f7IbWxWh0CIN1AfsK
+
+    9TVoHnR5xSDr6Q3RqCx6CY8A4MIm/I7UW5LEbifnWTJopu4qWF621v2tXWvT0TGU
+
+    XWJLTy9x453ibHCW9ybAr4J41hkrLOHPbcalzwIDAQABAoIBAClnd6WvMrYTgec+
+
+    LOe+0pXj5huPZoY5TtLMphYHHlOpU5meo5v3pmz5fpIxiwR9UgLS6vkwAYWvETDe
+
+    NZ/SI5ylN/eTliQ+gbM3VoX8vHVb+EmcvjUawDX0alDXbBV/mWbsfJ1RrVQtIiUU
+
+    53K7hkGFUAp8rkwrvGtJMQmD2x2XutVB0WgjGA/ewh/TZ6xUoNKZSredTmF3gzr3
+
+    StQKcs0pb2A/SbwwqHq3nuHOkbogLLUrlvYWBN62WXNIgQ8M4/65txoe/AJuSoMu
+
+    eY+HxmIBw1mDLIn4jWI1sLvr3cOXLjXFC6j0HjNaHPUAJOeHBIm5wPd8gth5IcJq
+
+    Q1l5gfkCgYEA/EEKB2vZSg+OctxAn/8FYBvShJEJmhLCvQDaq1D0SuVpDgKXZF69
+
+    vhOD7Zv/x10YzdbNqIGSeP6mEua/z1HTglM1efLke3vZJXt4m6vrWwf1+x8FKfo2
+
+    mQ/AMRSHdnOPSwaD82qvDnz8KexnKWkrxOi5CP+RUh4fs/ebIk3HJwcCgYEAwHIS
+
+    lPvhR1aoVFFCkt2QsDvq5ikfx1uFuW9BjfpwFCn2MQAvO+n2y4QoA2hyJ9utXlu3
+
+    kPREdzFsl9c7pwPpZo0i5/CO8y3SIl56eU41er0cq/g5WwcvrRJJC0f+Flzw9aeQ
+
+    ak1qnAiJRhpiVPDX4seD+DHxDkx9kBVnfbrE0PkCgYEAqAqDrdHwnF+km2uSOYNf
+
+    h1jBcsJTzSm2RMYu5XU2aDZPN6AOTjS23cqOVllXmO2xul3f/uLiOmwZIfpJyMhP
+
+    yD+6HhTqlEA6tbd87ucmECxLdxCBFiey+1/8vjVY0FXHHUmn2R42o8YrDZqIVpPT
+
+    LoeBzDbEDho3MGJAHCgIBT0CgYAmyZcXMiE4uK2auPobEc8sxhbVJurByp+MPXFQ
+
+    BW77kW2OeMQMZl6YrF1IOo/vmqY5w3CfJax6/ZoujHH4eqBbTA0CBIk7WDvnM3Wp
+
+    52p9/4m8233r6+nfDzVrsanzpe3nBUvlMQ9QvaO1XnH9PsG0cpQVvTMht6cDGF1Q
+
+    iQlMOQKBgF3Dxr1AHM7OKkg8qQiW3NGpp98pcicU9Z5cWkx/BKOZgP6ysmN6OY7i
+
+    iQZeDlc8c3HQAN39Lg77AzAg2aM3zgisvd8ygEAUsvvXLSBGLsr8i6WVqvhg6i8T
+
+    dzGM8G7eEFNdRwmNXs7r1+Z7fIgUsOlrd+9Mx7gtbsV9RY3maYs8
+
+    -----END RSA PRIVATE KEY-----
+
+    '
+props:
+    common:
+        appname: myQtQMLApp
+        arg: ''
+        buildcommands: ''
+        buildfiles: ''
+        command: ''
+        devpackages: qtdeclarative5-dev:#%platform.debian-arch%# libegl-dev:#%platform.debian-arch%#
+            libgl-dev:#%platform.debian-arch%#
+        env: ''
+        exename: myQtQMLApp
+        expose: ''
+        extrapackages: qml-module-qtquick2 qml-module-qtquick-window2
+        language: c-cpp-nossh
+        preinstallcommands: ''
+        sdkpostinstallcommands: ''
+        sdkpreinstallcommands: ''
+        targetcommands: ''
+        targetfiles: ''
+    debug:
+        arg: 'ARG SSHUSERNAME=#%application.username%#
+
+            '
+    release: {}
+publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9oS7LaLEQeMtahFYoaLw3wStmouRTeQTprCoXAq5Re9Tv8qPeB/fabdsNFrckh2bvFWJV32YaU7lVHq572YahAkYpaGlDUtJdtalYew6OLmIMfOf/X4M14zgwVazF96lQOgcQK0Um6RjqfOarfr41pSC1a2+R1Snaw3TTqD3tE4Ax2UZu1xRfdQt5pRLjGoaVTVu3M4PrR7Jn0Yvfa6+DqaSs3G8YL1/shtbFaHQIg3UB+wr1NWgedHnFIOvpDdGoLHoJjwDgwib8jtRbksRuJ+dZMmim7ipYXrbW/a1da9PRMZRdYktPL3HjneJscJb3JsCvgnjWGSss4c9txqXP
+sdkimages:
+    debug: sha256:6fddf75d9ab832169ed333781343da8d7921cbe6286b8f2efad49c759fd1570a
+    release: ''
+sdkimagetags:
+    debug: myqtqmlapp_arm32v7-qt5-wayland-no-ssh_bullseye_debug_8c0b123d-111a-454d-9c78-9813bae8f0ad_sdk_image
+    release: myqtqmlapp_arm32v7-qt5-wayland-no-ssh_bullseye_release_8c0b123d-111a-454d-9c78-9813bae8f0ad_sdk_image
+sdksshaddress:
+    debug: null
+    release: null
+shutdownscript:
+    common: ''
+    debug: ''
+    release: ''
+startupscript:
+    common: ''
+    debug: ''
+    release: ''
+username: torizon
+volumes:
+    common: {}
+    debug: {}
+    release: {}
