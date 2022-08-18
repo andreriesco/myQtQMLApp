@@ -1,4 +1,4 @@
-name: Github actions
+name: GitHub Actions
 'on':
   push:
     branches:
@@ -29,9 +29,7 @@ jobs:
           sleep 15
       - name: EULA Accept
         run: |
-          sudo ./moses-linux/tdskt platforms
           sudo ./moses-linux/tdskt eula nxp-la-opt-v5 setprop accepted true
-          sudo ./moses-linux/tdskt platforms
       - name: Enable Emulation
         run: |
           ./moses-linux/tdskt -p enableemulation
@@ -55,6 +53,6 @@ jobs:
           username: '${{ secrets.DOCKERHUB_USERNAME }}'
           password: '${{ secrets.DOCKERHUB_TOKEN }}'
       - name: Push Application To Dockerhub
-        run: |-
-          docker tag myqtqmlapp_arm32v7-qt5-wayland-no-ssh_bullseye_release_8c0b123d-111a-454d-9c78-9813bae8f0ad:latest ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:latest 
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/qtcore:latest
+        run: |
+          docker tag myqtqmlapp_arm32v7-qt5-wayland-no-ssh_bullseye_release_8c0b123d-111a-454d-9c78-9813bae8f0ad:latest ${{ secrets.DOCKERHUB_USERNAME }}/myqtqmlapp:latest 
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/myqtqmlapp:latest
